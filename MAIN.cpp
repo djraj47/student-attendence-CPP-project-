@@ -1,6 +1,5 @@
 #include "header.h"
 #include "login.cpp"
-#include "signup.cpp"
 int main()
 {
     int option;
@@ -9,10 +8,9 @@ int main()
     {
 
         cout << " ===================================== STUDENT MANAGAMENT SYSTEM ===================================== \n\n";
-        cout << "                                          press 1 to LOGIN \n";
-        cout << "                                          press 2 to SIGN UP \n";
-        cout << "                                          press 3 to EXIT \n\n";
-        cout << "                                        press < 1-3 > to continue : ";
+        cout << "                                           press 1 to LOGIN \n";
+        cout << "                                           press 2 to EXIT \n\n";
+        cout << "                                       press < 1-2 > to continue : ";
         cin >> option;
         switch (option)
         {
@@ -20,16 +18,14 @@ int main()
             login();
             break;
         case 2:
-            signup();
-            break;
-        case 3:
             exit(0);
             break;
 
         default:
+            cout << "\n                                            invalid input\n";
             break;
         }
-        cout << "press ENTER to continue \n";
-        ch = getch();
+        cout << "                                        press ENTER to continue \n";
+        scanf("%c%*c", &ch);
     } while (ch == '\n');
 }
