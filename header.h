@@ -5,8 +5,8 @@
 #include <fstream>
 #include <conio.h>
 #include <windows.h>
-#include<string>
 #include <iomanip>
+#include <string>
 using namespace std;
 
 class student

@@ -5,31 +5,30 @@ void add()
     system("cls");
     char ch;
     fstream of;
-    cout << "============================================ enter student data ====================================================\n\n";
+    cout << "======================================== ADD NEW STUDENT DATA ========================================\n\n";
     of.open("storage.dat", ios::app | ios::binary);
 
     student check;
     bool status;
     do
     {
-        cout << "                                         ROLLNO.  <>  ";
+        cout << "           enter student ROLLNO.  <>  ";
         cin >> check.roll;
         status = isExist(check.roll);
         if (status == true)
         {
-            cout << "\n                                     already exist\n";
+            cout << "already exist";
         }
     } while (status);
+
     cin.ignore();
-    cout << "                                           NAME  <>  ";
+    cout << "                  enter student NAME  <>  ";
     cin.getline(check.name, 50);
-    cout << "                                    FATHERNAME.  <>  ";
+    cout << "           enter student FATHERNAME.  <>  ";
     cin.getline(check.fathername, 50);
-    cout << "                                    BLOODGROUP.  <>  ";
-    cin >> check.bloodgroup;
+    cout << "           enter student BLOODGROUP.  <>  ";
+    cin.getline(check.bloodgroup, 3);
 
     of.write(reinterpret_cast<char *>(&check), sizeof(student));
-
     of.close();
-    cout << "\n\n                               Student record added successfully\n";
 }

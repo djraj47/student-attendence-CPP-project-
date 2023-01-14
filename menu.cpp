@@ -3,21 +3,23 @@
 #include "view.cpp"
 #include "edit.cpp"
 #include "remove.cpp"
+#include "search.cpp"
 
-int main()
+void menu()
 {
     int option;
     char ch;
     do
     {
         system("cls");
-        cout << "==============================================================================================================\n\n";
+        cout << "======================================== MANAGE STUDENT DATA ========================================\n\n";
         cout << "                                      press < 1 > to ADD NEW STUDENT \n";
-        cout << "                                      press < 2 > to VIEW STUDENT \n";
-        cout << "                                      press < 3 > to EDIT STUDENT \n";
-        cout << "                                      press < 4 > to REMOVE STUDENT \n";
-        cout << "                                      press < 5 > to EXIT  \n\n";
-        cout << "                                      press < 1-5 > to continue :";
+        cout << "                                      press < 2 > to VIEW ALL STUDENT \n";
+        cout << "                                      press < 3 > to SEARCH STUDENT \n";
+        cout << "                                      press < 4 > to EDIT STUDENT \n";
+        cout << "                                      press < 5 > to REMOVE STUDENT \n";
+        cout << "                                      press < 6 > to EXIT  \n\n";
+        cout << "                                      press < 1-6 > to continue :";
         cin >> option;
 
         switch (option)
@@ -29,12 +31,15 @@ int main()
             view();
             break;
         case 3:
-            edit();
+            search();
             break;
         case 4:
-            remove();
+            edit();
             break;
         case 5:
+            remove();
+            break;
+        case 6:
             exit(0);
             break;
 
