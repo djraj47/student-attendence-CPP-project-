@@ -14,7 +14,7 @@ bool isExist(int roll)
     {
         if (temp.roll == roll)
         {
-            cout << "record exist\n";
+           // cout << "record exist\n";
             objj.close();
             return true;
         }

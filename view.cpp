@@ -2,7 +2,8 @@
 void view()
 {
     system("cls");
-    cout << "======================================== VIEW STUDENT DATA ========================================\n";
+
+    cout << "=========================================== VIEW STUDENT DATA ===========================================\n";
 
     ifstream objj;
     objj.open("storage.dat", ios::binary);

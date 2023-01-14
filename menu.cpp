@@ -12,14 +12,15 @@ void menu()
     do
     {
         system("cls");
-        cout << "======================================== MANAGE STUDENT DATA ========================================\n\n";
-        cout << "                                      press < 1 > to ADD NEW STUDENT \n";
-        cout << "                                      press < 2 > to VIEW ALL STUDENT \n";
-        cout << "                                      press < 3 > to SEARCH STUDENT \n";
-        cout << "                                      press < 4 > to EDIT STUDENT \n";
-        cout << "                                      press < 5 > to REMOVE STUDENT \n";
-        cout << "                                      press < 6 > to EXIT  \n\n";
-        cout << "                                      press < 1-6 > to continue :";
+
+        cout << "========================================== MANAGE STUDENT DATA ==========================================\n\n";
+        cout << "                                     press < 1 > to ADD NEW STUDENT \n";
+        cout << "                                     press < 2 > to VIEW ALL STUDENT \n";
+        cout << "                                     press < 3 > to SEARCH STUDENT \n";
+        cout << "                                     press < 4 > to EDIT STUDENT \n";
+        cout << "                                     press < 5 > to REMOVE STUDENT \n";
+        cout << "                                     press < 6 > to EXIT  \n\n";
+        cout << "                                     press < 1-6 > to continue :";
         cin >> option;
 
         switch (option)

@@ -7,7 +7,8 @@ void remove()
     int roll, flag = 0;
     objj.open("storage.dat", ios::app | ios::binary);
     objjtemp.open("temp.dat", ios::app | ios::binary);
-    cout << "======================================== DELETE STUDENT RECORD ========================================\n\n";
+
+    cout << "========================================= DELETE STUDENT RECORD =========================================\n\n";
     cout << "                           enter student ROLLNO <> ";
     cin >> roll;
     while (objj.read(reinterpret_cast<char *>(&temp), sizeof(student)))
@@ -27,7 +28,7 @@ void remove()
     rename("temp.dat", "storage.dat");
     if (!flag)
     {
-        cout << setw(60) << "\n no record found ";
+        cout << "\n                                         no record found ";
     }
     else
     {

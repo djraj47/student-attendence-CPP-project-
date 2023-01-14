@@ -12,7 +12,8 @@ void login()
     do
     {
         system("cls");
-        cout << "======================================== LOGIN TO CONTINUE ========================================\n\n";
+
+        cout << "=========================================== LOGIN TO CONTINUE ===========================================\n\n";
         cout << setw(60) << "enter your USERNAME <> ";
         cin >> username;
         cout << setw(60) << "enter your pin <> ";
