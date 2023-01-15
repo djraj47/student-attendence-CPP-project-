@@ -17,20 +17,20 @@ void edit()
             cout << "                                           record found";
             cout << "                                           NAME <> " << temp.name << endl;
             cout << "                                     FATHERNAME <> " << temp.fathername << endl;
-            cout << "                                     BLOODGROUP <> " << temp.bloodgroup << endl;
+            cout << "                                  DATE OF BIRTH <> " << temp.dob << endl;
             cin.ignore();
             cout << "                                    enter student NEW record \n\n";
             cout << "                             enter student NAME <> ";
             cin.getline(stu.name, 50);
             cout << "                       enter student FATHERNAME <> ";
             cin.getline(stu.fathername, 50);
-            cout << "                       enter student BLOODGROUP <> ";
-            cin.getline(stu.bloodgroup, 3);
+            cout << "                    enter student DATE OF BIRTH <> ";
+            cin.getline(stu.dob, 3);
             objj.seekp(objj.tellp() - sizeof(student));
             objj.write(reinterpret_cast<char *>(&stu), sizeof(student));
             objj.close();
             found = 1;
-        }
+        } 
     }
     if (!found)
     {

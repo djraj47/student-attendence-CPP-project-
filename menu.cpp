@@ -4,6 +4,10 @@
 #include "edit.cpp"
 #include "remove.cpp"
 #include "search.cpp"
+#include "sort.cpp"
+#include "marks.cpp"
+#include "result.cpp"
+#include "viewmarks.cpp"
 
 void menu()
 {
@@ -19,8 +23,12 @@ void menu()
         cout << "                                     press < 3 > to SEARCH STUDENT \n";
         cout << "                                     press < 4 > to EDIT STUDENT \n";
         cout << "                                     press < 5 > to REMOVE STUDENT \n";
-        cout << "                                     press < 6 > to EXIT  \n\n";
-        cout << "                                     press < 1-6 > to continue :";
+        cout << "                                     press < 6 > to SORT RECORD \n";
+        cout << "                                     press < 7 > to ADD MARKS  \n";
+        cout << "                                     press < 8 > to VIEW MARKS  \n";
+        cout << "                                     press < 9 > to SHOW RESULT  \n";
+        cout << "                                     press < 10 > to EXIT  \n\n";
+        cout << "                                     press < 1-10 > to continue :";
         cin >> option;
 
         switch (option)
@@ -41,6 +49,18 @@ void menu()
             remove();
             break;
         case 6:
+            sortStudents();
+            break;
+        case 7:
+            marks();
+            break;
+        case 8:
+            viewmarks();
+            break;
+        case 9:
+            result();
+            break;
+        case 10:
             exit(0);
             break;
 

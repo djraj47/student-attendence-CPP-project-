@@ -15,7 +15,17 @@ public:
     int roll;
     char name[50];
     char fathername[50];
-    char bloodgroup[3];
+    char dob[15];
 };
-
+class grade
+{
+public:
+    char name[50];
+    int mark[5];
+};
+class atten{
+    public :
+    char name[50];
+    int day[31][2];
+};
 #endif

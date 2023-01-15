@@ -29,8 +29,8 @@ void add()
     cin.getline(check.name, 50);
     cout << "                             enter student FATHERNAME.  <>  ";
     cin.getline(check.fathername, 50);
-    cout << "                             enter student BLOODGROUP.  <>  ";
-    cin.getline(check.bloodgroup, 3);
+    cout << "                           enter student DATE OF BIRTH  <>  ";
+    cin.getline(check.dob, 15);
 
     of.write(reinterpret_cast<char *>(&check), sizeof(student));
     of.close();

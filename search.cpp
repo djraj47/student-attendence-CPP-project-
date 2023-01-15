@@ -19,7 +19,7 @@ void search()
             cout << "                                           ROLLNO. <> " << temp.roll << endl;
             cout << "                                              NAME <> " << temp.name << endl;
             cout << "                                        FATHERNAME <> " << temp.fathername << endl;
-            cout << "                                        BLOODGROUP <> " << temp.bloodgroup << endl;
+            cout << "                                       DATEOFBIRTH <> " << temp.dob << endl;
         }
     }
     objj.close();
