@@ -12,7 +12,7 @@ void result()
     mobj.open("marks.dat", ios::binary);
     system("cls");
     cout << "                    INSTITUE OF PROFESSIONAL AND EXXCELLENCE MANAGMENT " << endl;
-    cout << "                             Ghazaibad , Uttar Pradesh , 201009" << endl;
+    cout << "                             Ghazaibad , Uttar Pradesh , 201009" << endl<<endl;
     while (sobj.read(reinterpret_cast<char *>(&stu), sizeof(student)))
     {
         if (stu.roll == roll)
