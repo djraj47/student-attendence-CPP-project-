@@ -11,6 +11,7 @@
         "stdexcept": "cpp",
         "system_error": "cpp",
         "typeinfo": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "iosfwd": "cpp"
     }
 }

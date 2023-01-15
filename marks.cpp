@@ -5,11 +5,12 @@ void marks()
     grade get;
     ofstream markk;
     ifstream stud;
-    markk.open("marks.dat", ios::app | ios ::binary);
+    markk.open("marks.dat", ios::out | ios ::binary);
     stud.open("storage.dat", ios ::binary);
-
+    markk.seekp(0, ios::beg);
     while (stud.read(reinterpret_cast<char *>(&stu), sizeof(student)))
     {
+
         cout << "\n\nEnter marks of " << stu.name << endl
              << endl;
         strncpy(get.name, stu.name, 50);
